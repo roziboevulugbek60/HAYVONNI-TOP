@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hayvonni Top</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">🐾</div>
+        <h1>HAYVONNI TOP</h1>
+        <p>Hayvonlarni taniysizmi?</p>
+    </header>
+
+    <section id="start-screen" class="screen">
+        <div class="big-icon">🦁</div>
+        <h2>O‘yinga xush kelibsiz!</h2>
+        <p>Ismingizni kiriting va o‘yinni boshlang.</p>
+
+        <input
+            type="text"
+            id="player-name"
+            placeholder="Ismingiz..."
+            maxlength="25"
+        >
+
+        <button id="start-btn">Boshlash 🚀</button>
+    </section>
+
+    <section id="quiz-screen" class="screen hidden">
+
+        <div class="info">
+            <span id="question-number">1/10</span>
+            <span id="score">⭐ 0</span>
+            <span id="mistakes">❌ 0</span>
+        </div>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h2>Bu qaysi hayvon? 🤔</h2>
+
+        <div class="animal-card">
+            <img id="animal-image" src="" alt="Hayvon rasmi">
+        </div>
+
+        <div id="answers" class="answers"></div>
+
+        <p id="feedback"></p>
+
+        <button id="next-btn" disabled>
+            Keyingi savol ➜
+        </button>
+
+    </section>
+
+    <section id="result-screen" class="screen hidden">
+        <div class="big-icon">🏆</div>
+        <h2>O‘yin tugadi!</h2>
+
+        <h3 id="result-name"></h3>
+
+        <div class="result-box">
+            <p id="final-score"></p>
+            <p id="final-mistakes"></p>
+            <p id="final-message"></p>
+        </div>
+
+        <button id="restart-btn">Qayta o‘ynash 🔄</button>
+    </section>
+
+    <footer>
+        Ishlab chiqaruvchi: Ulug‘bek.R
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
